@@ -34,5 +34,14 @@ public class Main {
 
         System.out.println("Max:" + maxAnimal.idade);
         System.out.println("Min:" + minAnimal.idade);
+
+        int posicao = Collections.binarySearch(animais, new Galinha("Galinha", 11));
+        System.out.println(posicao);
+
+        Collections.reverse(animais);
+        System.out.println("------------------");
+        for(Animal animal : animais) {
+            System.out.println(animal.nome + " : " + animal.idade);
+        }
     }
 }

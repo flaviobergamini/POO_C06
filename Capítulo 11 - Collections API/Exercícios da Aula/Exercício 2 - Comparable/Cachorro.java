@@ -9,10 +9,10 @@ public class Cachorro extends Animal {
     @Override
     public int compareTo(Animal o) {
         if (this.idade < o.idade)
-            return 1;
+            return -1;
 
         if (this.idade > o.idade)
-            return -1;
+            return 1;
 
         return 0;
     }
